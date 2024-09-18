@@ -68,7 +68,7 @@ if(validation()){
                 newErrors.phone='Phone number is required'
             }
 
-            else if(!formData.phone.length===10){
+            else if(formData.phone.length!==10){
                 newErrors.phone='Phone number must be exactly 10 digits'
             }
         }
